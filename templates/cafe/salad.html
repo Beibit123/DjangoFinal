@@ -1,0 +1,29 @@
+{% extends 'cafe/base.html' %}
+
+{% block title %}
+    Salads
+{% endblock %}
+
+{% block content %}
+    <h3 style="text-align:center">Salads</h3>
+    <br>
+    <div class="card-deck mb-3 text-center">
+    {% for el in salads%}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{el.name}}</h4>
+            </div>
+            <div class="card-body">
+            <img src="{{el.image}}" alt="..." class="img-thumbnail">
+            <h1 class="card-title pricing-card-title">{{el.price}} tenge <small class="text-muted">/ piece</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>{{el.description}}</li>
+                <li>Available: {{el.available}}</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Add to cart</button>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    
+{% endblock %}
