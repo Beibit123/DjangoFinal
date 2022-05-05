@@ -14,3 +14,5 @@ Repository contains:
 12. JWT Authentication(token)
 13. Permissions
 14. Logging module
+
+Hope you enjoy it!
