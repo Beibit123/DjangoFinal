@@ -1,4 +1,4 @@
-This is the cafe app for django project. You can implemend this repository to your prject if want to have online order service with the routing and token authentication
+This is the cafe app for django project. You can implement this repository to your project if want to have online order service with the routing and token authentication
 Repository contains:
 1. Models
 2. Model managers 
